@@ -8,6 +8,7 @@ const auth = async(req,res,next)=>{
         // console.log(verifyUser);
         const data = await Regis.findOne({_id:verifyUser._id})
         // console.log(data);
+        //comment is addedd
         req.token = token;
         req.data = data;
         
