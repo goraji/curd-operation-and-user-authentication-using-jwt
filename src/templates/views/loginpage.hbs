@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+    <title>login</title>
+</head>
+
+<body>
+    {{>navbar}}
+    
+    <div class="container">
+        <h3>{{errorComm}}</h3>
+        <form action="/loginpage" method="POST">
+            Email:<input type="email" name="email"><br><br>
+            password:<input type="password" name="password"><br><br>
+            <button type="submit" value="submit">login</button><br><br>
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+.nav{
+    border: 2px solid black;
+    text-align: center;
+    background-color: rgb(255, 255, 132);
+
+}
+.navlink{
+    margin: 30px;
+    font-size: 20px;
+}
+.container{
+    background-color: cornflowerblue;
+    border: 2px solid black;
+    text-align: center;
+    margin: auto;
+    width: 25%;
+    margin-top: 6%;
+}

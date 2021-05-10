@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>welcome</title>
+</head>
+<body bgcolor="pink">
+    {{>navbar}}
+    <h3>{{errorComm}}</h3>
+        <form action="/update" method="POST">
+        <input type="hidden" name="id" value="{{details._id}}">
+            Name:<input type="text" name="name" value="{{details.name}}">><br><br>
+            Email:<input type="email" name="email" value="{{details.email}}">><br><br>
+            <button type="submit" value="submit">update</button><br><br>
+        </form>
+</body>
+</html>

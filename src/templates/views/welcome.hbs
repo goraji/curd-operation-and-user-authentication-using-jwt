@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>welcome</title>
+</head>
+<body bgcolor="pink">
+    {{>navbar}}
+    <div class="welcome">
+        <h1>welcome to the TheZeroStart</h1>
+        <table border="1px" id="user-table">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+
+        {{#each details}}
+        <tr>
+            <td> {{this.name}} </td>
+            <td> {{this.email}} </td>
+            <td> <a href="update/{{this.id}}">update </a></td>
+            <td> <a href="delete/{{this._id}}">delete</a></td>
+        </tr>
+        {{/each}}
+    </table>
+    </div>
+</body>
+</html>
